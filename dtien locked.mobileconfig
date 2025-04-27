@@ -178,11 +178,11 @@
 	<key>PayloadDescription</key>
 	<string>Tối ưu Free Fire: Điều khiển, FPS 120Hz, Giảm Lag Đồ Họa</string>
 	<key>PayloadDisplayName</key>
-	<string>TranHieu_OptimizationPack_FULL</string>
+	<string>dtien locked</string>
 	<key>PayloadIdentifier</key>
-	<string>com.tranhieu.config.fulloptimize.v2</string>
+	<string>com.dtien.config.fulloptimize.v2</string>
 	<key>PayloadOrganization</key>
-	<string>Tran Hieu Team</string>
+	<string>Dtien ios</string>
 	<key>PayloadRemovalDisallowed</key>
 	<false/>
 	<key>PayloadType</key>
