@@ -6,9 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dinh Tien Menu</title>
   <style>
-.toggle-button {
+ body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content:flex-end; /* Căn chỉnh nội dung sang bên phải */
+            align-items: center; /* Căn giữa theo chiều dọc */
+            height: 100vh; /* Chiều cao toàn bộ màn hình */
+            background-color: #f0f0f0; /* Màu nền */
+        }
+
+        .container {
+            background-color: white; /* Màu nền cho container */
+            padding: 20px; /* Khoảng cách bên trong */
+            border-radius: 8px; /* Bo góc */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px; 
+            color: #333; 
+        }
+
+        .settings {
+            display: flex;
+            flex-direction: column; /* Sắp xếp theo cột */
+        }
+
+        .setting {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block; 
+            margin-bottom: 5px; 
+        }
+
+        input[type="range"] {
+            width: 100%;
+        }
+    .toggle-button {
   position: fixed;
-  top: 10px;
+  top: 5px;
   left: 10px;
   width: 50px;
   height: 50px;
@@ -180,9 +219,45 @@
 <div class="toggle-button" onclick="toggleMenu()">
   <img src="woobin.jpg" alt="toggle" class="toggle-icon">
 </div>
-
-  <!-- Menu bên trái -->
+ <div class="container">
+        <h1>Menu IOS bá sàn</h1>
+        <div class="settings">
+            <div class="setting">
+                <label for="aimbot">Ghim đầu:</label>
+                <input type="range" id="aimbot" name="aimbot" min="0" max="100" value="0">
+            </div>
+            <div class="setting">
+                <label for="red-dot">aimfov:</label>
+                <input type="range" id="red-dot" name="red-dot" min="0" max="100" value="0">
+            </div>
+            <div class="setting">
+                <label for="2x-scope">aimlock:</label>
+                <input type="range" id="2x-scope" name="2x-scope" min="0" max="100" value="0">
+            </div>
+            <div class="setting">
+                <label for="4x-scope">lock:</label>
+                <input type="range" id="4x-scope" name="4x-scope" min="0" max="100" value="0">
+            </div>
+            <div class="setting">
+                <label for="awm-scope">tốc độ kéo:</label>
+                <input type="range" id="awm-scope" name="awm-scope" min="0" max="100" value="0">
+            </div>
+     <!-- Menu bên trái -->
   <div class="menu">
+     <div class="menu-item">
+      <span>fix recoil</span>
+      <label class="switch">
+        <input type="checkbox" onchange="handleToggle(this)">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="menu-item">
+      <span>Aim</span>
+      <label class="switch">
+        <input type="checkbox" onchange="handleToggle(this)">
+        <span class="slider"></span>
+      </label>
+    </div>
     <div class="menu-item">
       <span>Speed</span>
       <label class="switch">
