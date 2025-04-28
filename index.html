@@ -10,17 +10,21 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content:flex-end; /* Căn chỉnh nội dung sang bên phải */
-            align-items:space-evenly; /* Căn giữa theo chiều dọc */
-            height: 120vh; /* Chiều cao toàn bộ màn hình */
+            justify-content: flex-end; /* Căn chỉnh nội dung sang bên phải */
+            align-items: flex-start; /* Căn chỉnh theo chiều dọc */
+            height: 100vh; /* Chiều cao toàn bộ màn hình */
             background-color: #f0f0f0; /* Màu nền */
         }
 
         .container {
+            position: fixed; /* Đặt vị trí cố định */
+            bottom: 20px; /* Cách từ đáy màn hình 20px */
+            right: 20px; /* Cách từ bên phải màn hình 20px */
             background-color: white; /* Màu nền cho container */
             padding: 20px; /* Khoảng cách bên trong */
             border-radius: 8px; /* Bo góc */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 10; /* Đảm bảo container nằm trên các phần tử khác */
         }
 
         h1 {
